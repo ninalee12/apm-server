@@ -82,10 +82,8 @@ spec:
       pipeline_file: ".buildkite/version-bump-pipeline.yml"
       provider_settings:
         trigger_mode: none
-      cancel_intermediate_builds: true
-      cancel_intermediate_builds_branch_filter: "!main"
-      skip_intermediate_builds: true
-      skip_intermediate_builds_branch_filter: "!main"
+      cancel_intermediate_builds: false
+      skip_intermediate_builds: false
       teams:
         obs-ds-intake-services: {}
         observablt-robots: {}
